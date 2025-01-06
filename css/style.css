@@ -1,0 +1,286 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+}
+a{
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+button{
+    cursor: pointer;
+}
+/* start header */
+.nav {
+    width: 100%;
+}
+.header{
+    background-image: url(../images/background.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.header .nav nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 1.5rem;
+}
+.header .nav nav .logo{
+    width: 50%;
+    margin: auto;
+}
+.header .nav nav .logo h1{
+    color: rgb(253, 250, 250);
+    font-size: 35px;
+    text-shadow: 3px 3px 4px rgb(215, 79, 158); 
+    font-style: italic;
+}
+.header .nav nav ul{
+    width: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .nav nav ul a{
+    color: aliceblue;
+    font-size: 18px;
+    transition: all 1s 0.2s ease-in-out;
+}
+.header .nav nav ul li a:hover{
+    color: rgb(203, 76, 146);
+    transform: scale(1.2);
+}
+.header .main{
+    height: 80vh;
+    margin: auto;
+    color: aliceblue;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header .main h1{
+    font-size: 65px;
+    font-style: italic;
+}
+/* end header */
+/* start section2 */
+.sec-2 .col-1{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.sec-2 .col-1 .img {
+    width: 20%;
+}
+.sec-2 .col-1 .col-1-1{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(249, 227, 231);
+    padding: 0.5rem;
+}
+.sec-2 .col-1 .col-1-1 .text-content{
+    width: 60%;
+    margin: auto;
+    margin-right: 2rem;
+    padding: 1rem;
+}
+.sec-2 .col-1 .col-1-1 .text-content p,h1,.salary{
+    margin: 1rem 0;
+    line-height: 20px;
+    font-size: 20px;
+}
+.sec-2 .col-1 .col-1-1 .text-content h1,.salary{
+    color: rgb(219, 76, 157);
+    font-size: 28px;
+}
+.sec-2 .col-1 .col-1-1 .text-content hr{
+    background-color: rgb(219, 76, 157);
+    border-bottom: none;
+    height: 2.5px;
+    width: 380px;
+    margin: auto;
+}
+.sec-2 .col-1 .col-1-1 .text-content button{
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin: 1rem 0;
+    background-color: rgb(219, 76, 157);
+    color: aliceblue;
+    border: none;
+}
+.sec-2 .col-1 .img img{
+    width: 300px
+}
+.sec-2 .col-1 .col-1-2{
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    color: aliceblue;
+}
+.sec-2 .col-1 .col-1-2 h1{
+    font-size: 30px;
+}
+.sec-2 .col-1 .col-1-2 p{
+    width: 85%;
+    margin: 2rem auto;
+    font-size: 17px;
+    color:darkgray;
+   
+}
+.sec-2 .col-1 .col-1-2 .rose{
+    color: rgb(175, 29, 112);
+}
+.sec-2 .col-1 .col-1-2 .icons i{
+    margin: .5rem;
+    font-size: 40px;
+    cursor: pointer;
+}
+/* end section2 */
+/* start cards section  */
+.cards_{
+    background-color: black;
+    overflow: hidden;
+    color: aliceblue;
+    text-align: center;
+}
+.cards_ .cards{
+    width: 98%;
+    margin: 2rem auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.cards_ .cards .card .img-content{
+    position:relative;
+    overflow: hidden;
+    border-radius: 55px;
+    transition: 1s 0.4s ease-in-out;
+}
+.cards_ .cards .card{
+    margin: 1.5rem;
+}
+.layer{
+    position: absolute;
+    text-align: center;
+    top:100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 55px;
+    background-color: rgba(119, 115, 115, 0.693);
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 30px;
+    font-style: italic;
+    transition: 1s 0.4s ease-in-out;
+}
+.img-content:hover{
+    img{
+        scale: 1.09;
+    }
+    .layer{
+        top: 0;
+    }
+}
+.cards_ .cards .card img{
+    width: 100%;
+     margin: 0.8rem 1rem;
+}
+.cards_ .cards .card .salarys{
+    width: 60%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+.cards_ .cards .card button{
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin: 1rem 0 0 ;
+    background-color: rgb(219, 76, 157);
+    color: aliceblue;
+    border: none;
+
+}
+/* end cards section  */
+/* start se4 */
+.sec4 .sec4_{
+    background-image: url(../images/lizzie-BqYoSL76lGo-unsplash\ 2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+    background-attachment: fixed;
+    height: 60vh;
+}
+footer{
+    background-color: #000;
+    color: aliceblue;
+    text-align: center;
+}
+footer .icon_ i{
+    margin: .6rem;
+    margin-bottom: 1rem;
+    font-size: 35px;
+    cursor: pointer;
+}
+footer .icon_ span{
+    color: rgb(188, 9, 111);
+}
+footer .col{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 3rem;
+    line-height: 35px;
+}
+footer .col h3{
+    font-size: 25px;
+}
+footer .col a{
+    display: block;
+    color: rgb(158, 155, 155);
+    transition: all 0.2s ease-in-out;
+    font-size: 18px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+footer .col a:hover{
+    transform: scale(1.2);
+    text-shadow: 4px 4px 4px rgb(166, 22, 70);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* end se4 */
